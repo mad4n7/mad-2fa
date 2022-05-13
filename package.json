@@ -1,0 +1,56 @@
+{
+  "name": "mad2fa",
+  "version": "1.0.0",
+  "description": "This package allows you to use 2FA to your app. NFC token and software-based authenticator",
+  "main": "./lib/cjs/mad2fa.js",
+  "module": "./lib/ems/mad2fa.js",
+  "files": [
+    "./lib"
+  ],
+  "scripts": {
+    "compile": "npx tsc -p tsconfig.json && npx tsc -p tsconfig-cjs.json",
+    "prepublish": "npm run compile",
+    "test": "jest"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mad4n7/mad2fa.git"
+  },
+  "keywords": [
+    "mad2fa",
+    "2fa",
+    "authentication",
+    "two",
+    "factor",
+    "authentication",
+    "usb",
+    "usb-c",
+    "security",
+    "nfc",
+    "auth",
+    "otp",
+    "totp"
+  ],
+  "author": "Arthur Silva <me@mad4n7.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "@typescript-eslint/eslint-plugin": "^5.10.2",
+    "@typescript-eslint/parser": "^5.10.2",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "eslint-plugin-react": "^7.28.0",
+    "prettier": "2.5.1",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "jssha": "^3.2.0"
+  }
+}
